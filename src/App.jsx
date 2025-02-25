@@ -1,12 +1,13 @@
-import BookWidget from "./restaurantwidget/BookWidget"
+import Accordion from "./accordioncomponent/Accordion"
+
 
 function App() {
  
 
   return (
-    <>
-      <BookWidget />
-    </>
+    <div className="container">
+      <Accordion />
+    </div>
   )
 }
 
