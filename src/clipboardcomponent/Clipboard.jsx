@@ -1,13 +1,12 @@
 import { useState } from 'react';
-
 function Clipboard() {
   const [inputValue, setInput] = useState("");
-  const [isCopied, setIsCopied] = useState(false); // New state variable
+  const [isCopied, setIsCopied] = useState(false); 
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(inputValue);
-    setIsCopied(true); // Update the copied state
-    setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
+    setIsCopied(true); 
+    setTimeout(() => setIsCopied(false), 2000); 
     setInput("")
   };
 
@@ -23,9 +22,9 @@ function Clipboard() {
         />
         <button
           className="bg-sky-300 px-5 rounded-md"
-          onClick={handleCopy} // Use the handleCopy function
+          onClick={handleCopy} 
         >
-          {isCopied ? "Copied!" : "Copy Message"} {/* Conditional button text */}
+          {isCopied ? "Copied!" : "Copy Message"} 
         </button>
       </div>
     </>
