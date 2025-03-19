@@ -1,4 +1,4 @@
-import Accordion from "./accordioncomponent/Accordion"
+import Clipboard from "./clipboardcomponent/Clipboard"
 
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="container">
-      <Accordion />
+      <Clipboard />
     </div>
   )
 }
